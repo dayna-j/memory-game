@@ -1,0 +1,133 @@
+html,body {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.noSelect{ user-select: none;}
+
+.hidden{ display: none;}
+
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color: #282828;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html{
+  border: 12px solid #080808;
+}
+
+#board-container{
+  position: relative;
+  border: 1px outset #303030;
+  background-color: #202020;
+}
+
+#game-board{
+  
+  
+}
+
+.row{
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #282828;
+  // opacity: .4;
+  // padding: 1px;
+  margin: 5px;
+}
+
+.game-tile{
+  // position: absolute;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background: black;
+  margin: 5px;
+  transition: all .2s;
+  text-align: center;  
+  background: url('http://www.daynajblackwell.com/images/floral-pattern-1603073_640.png') fixed center center no-repeat;
+  // color: #484A48;
+  color: darkslategray;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 75px;     /////// line height equal to div height NEW TRICK
+  vertical-align:top;    
+}
+
+.game-tile:hover{
+  background-color: #080808;
+  // border: 10px double darkslategray;
+    border: 2px double #CED3D7;
+
+}
+
+.game-tile:active{
+  border: 4px double #CED3D7;
+}
+
+header{
+  position: fixed;
+  top: 0px;
+}
+
+header p{
+  font-family: 'Nova Mono', monospace;
+  font-size: 3em;
+  color: #080808;
+  letter-spacing: 12px;
+  transition: all .5s;
+}
+
+header p:hover{
+  letter-spacing: 5px;
+}
+
+header p:first-letter{
+  // color: darksalmon;
+  // color: #696969;
+  color: #CED3D7;
+}
+
+header p:hover{
+  // color: #6588A2;
+  color: darkslategray;
+}
+
+#newGameButton{
+  position: absolute;
+  background-color: #080808;
+  border: none;
+  outline: none;
+  color: grey;
+  padding: 10px;
+  bottom: 100px;
+  width: 120px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Nova Mono', monospace;
+  transition: all .5s;
+}
+
+#newGameButton:hover{
+  color: darkslategray;
+
+}
+
+@media only screen and (max-height: 600px) {
+  header p{
+    // position: relative;
+    // font-size: 2em;
+    // top: -10px;   
+    display: none;
+  }
+}

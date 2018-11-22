@@ -1,0 +1,134 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.noSelect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #282828;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html {
+  border: 12px solid #080808;
+}
+
+#board-container {
+  position: relative;
+  border: 1px outset #303030;
+  background-color: #202020;
+}
+
+.row {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #282828;
+  margin: 5px;
+}
+
+.game-tile {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background: black;
+  margin: 5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-align: center;
+  background: url("http://www.daynajblackwell.com/images/floral-pattern-1603073_640.png") fixed center center no-repeat;
+  color: darkslategray;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 75px;
+  vertical-align: top;
+}
+
+.game-tile:hover {
+  background-color: #080808;
+  border: 2px double #CED3D7;
+}
+
+.game-tile:active {
+  border: 4px double #CED3D7;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+}
+
+header p {
+  font-family: 'Nova Mono', monospace;
+  font-size: 3em;
+  color: #080808;
+  letter-spacing: 12px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header p:hover {
+  letter-spacing: 5px;
+}
+
+header p:first-letter {
+  color: #CED3D7;
+}
+
+header p:hover {
+  color: darkslategray;
+}
+
+#newGameButton {
+  position: absolute;
+  background-color: #080808;
+  border: none;
+  outline: none;
+  color: grey;
+  padding: 10px;
+  bottom: 100px;
+  width: 120px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Nova Mono', monospace;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#newGameButton:hover {
+  color: darkslategray;
+}
+
+@media only screen and (max-height: 600px) {
+  header p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
